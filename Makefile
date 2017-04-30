@@ -9,10 +9,10 @@ build:
 rebuild: clean build
 
 clean:
-	swift build --clean
+	swift package clean
 
 distclean:
-	swift build --clean dist
+	swift package clean dist
 
 tags:
 	ctags -R ./ ../swift-corelibs-foundation/
